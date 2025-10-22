@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #9dd6ff, #ffffff);
+  color: #2f3640;
+  margin: 0;
+  padding: 0;
+  margin-left: 300px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.container:hover {
+  transform: scale(1.01);
+}
+
+h1 {
+  color: #1e88e5;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.nome, .preco {
+  margin-top: 20px;
+}
+
+label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cfd8dc;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #42a5f5;
+  box-shadow: 0 0 6px rgba(66, 165, 245, 0.4);
+  outline: none;
+}
+
+button {
+  background: #42a5f5;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #1e88e5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(30, 136, 229, 0.25);
+}
+
+#add, #calcBtn, #salvarBtn {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.pedidos {
+  margin-top: 40px;
+}
+
+.pedidos h2 {
+  color: #1976d2;
+  border-left: 4px solid #42a5f5;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.result {
+  list-style: none;
+  padding: 0;
+}
+
+.result li {
+  background: #e3f2fd;
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+#total {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #1e88e5;
+  margin-top: 15px;
+}
+
+div:has(#total) {
+  background: #f0f6ff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 25px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .result li {
+    font-size: 0.9em;
+  }
+}

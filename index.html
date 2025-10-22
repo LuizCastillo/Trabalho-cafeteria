@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cafeteria</h1>
+        
+        <div class="nome">
+            <label>Nome do prato: </label>
+            <input id="nome" required autofocus>
+        </div>
+
+        <div class="preco">
+            <label>Preço do prato: </label>
+            <input type="number" step="0.01" id="preco" required>
+        </div>
+
+        <button id="add">Adicionar prato</button>
+
+        <div class="pedidos">
+            <h2>Seus pedidos</h2>
+            <ul id="result" class="result"></ul>
+            <div>Total: R$ <div id="total">0,00</div></div>
+        </div>
+
+        <button id="calcBtn">Calcular o valor total</button>
+
+        <button id="salvarBtn">Salvar Dados</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
